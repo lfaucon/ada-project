@@ -18,7 +18,7 @@ print("----------------------------")
 
 courseName = "progfun-002"
 
-showPlots = True
+showPlots = False
 
 print("-----------------------")
 print("--- Import datasets ---")
@@ -30,7 +30,7 @@ print(df_User_Grades.head())
 
 df_Problem_Event = pd.read_csv('data/' + courseName + '_Problem_Events_with_Info.csv', index_col='SessionUserID')
 df_Problem_Event = df_Problem_Event[['MaximumSubmissions','SubmissionNumber','Grade','TimeStamp','ProblemID','SoftCloseTime','ProblemType','HardCloseTime','OpenTime','Title','UniqueProblemID']]
-print(df_Problem_Event.head(20))
+print(df_Problem_Event.head())
 
 print("---------------------")
 print("--- Counts grades ---")
@@ -60,16 +60,18 @@ print("------------------------------")
 print("--- Explore Problem Events ---")
 print("------------------------------")
 
-print("SESSIONUSERID")
+print("=====> SessionUserID")
 print(df_Problem_Event.index.value_counts().head())
-print("PROBLEMTYPE")
+print("=====> ProblemType")
 print(df_Problem_Event.ProblemType.value_counts())
 
 df_assignments = df_Problem_Event[df_Problem_Event.ProblemType == "Assignment"]
-print("GRADE")
+print("=====> Grade")
 print(df_assignments.Grade.value_counts().head())
-print("UNIQUEPROBLEMID")
+print("=====> UniqueProblemID")
 print(df_assignments.UniqueProblemID.value_counts())
+print("=====> ProblemID")
+print(df_assignments.ProblemID.value_counts())
 
 print("-----------------------------------")
 print("--- Plotting assignments grades ---")
