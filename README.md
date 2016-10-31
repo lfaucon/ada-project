@@ -1,9 +1,15 @@
 # ada-project
 # Extraction of learning patterns of students in MOOCs
 
+## Group members
+
+- Thibault Asselborn
+- Victor Faramond
+- Louis Faucon
+
 ## Abstract
 
-How do students learn in MOOCs? Is there efficient and inefficient learning patterns? This project will aim at giving answers to these question by analysing the activities of hundreds of thousends of students on EPFL Scala MOOC on Cousera. 
+How do students learn in MOOCs? Are there efficient and inefficient learning patterns? This project will aim at giving answers to these question by analysing the activities of hundreds of thousends of students on EPFL Scala MOOC on Cousera. 
 
 ## Data description
 
@@ -30,17 +36,19 @@ For each session the available datasets are:
 
 ## Challenging aspects 
 
-### Visualizations
+- **Visualizations**:
+The data we are working with would need to be visualized in a simple, because the insights provided will benefit educators who would not be able to un
 
-
-### Big data 
-
+- **Big data**:
+The dataset at hand is of approximately 9G (raw csv files, it will be less after cleaning and extracting meaningfull items). Even if it is not *HUGE*, it makes it quite slow to handle on a single laptop (In particular it is bigger than the RAM memory). That is why we plan to implement our analysis with Spark to be able to run it on a distributed cluster later on. At first we will develop our algorithm by testing in locally on a subset of our data, then use the cluster to apply our analysis to the whole dataset. 
 
 ## Expected results 
-- Simple and clear visualization of students 
+
+- Simple and clear visualization of students learning pattern and their efficiency
 - Extensive analysis of the learning patterns and measure of correlations between pattern used and grade improvement in assignments
 
 ## Timeplan
+
 - **October**: 
 Getting the Scala MOOC data from EPFL lab CHILI and starting to explore it using Pandas and Spark in an IPython notebooks.
 - **November**: 
