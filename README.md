@@ -38,10 +38,18 @@ For each session the available datasets are:
 
 ## Expected results 
 - Simple and clear visualization of students 
-- Extensive analysis of the learning patterns and measure of correlations between pattern used and grade improvment in assignments
-- 
+- Extensive analysis of the learning patterns and measure of correlations between pattern used and grade improvement in assignments
 
 ## Timeplan
+- **October**: 
+Getting the Scala MOOC data from EPFL lab CHILI and starting to explore it using Pandas and Spark in an IPython notebooks.
+- **November**: 
+Handling the data: cleaning, parsing, transforming and extracting. Producing basic aggregations measures and visualisations to give us insights on the learning patterns
+- **December**:
+Apply more complex Machine Learning (Clustering, Prediction of Learning gain from the learning pattern). Define the structure of the visualisation to represents students and learning patterns (As a tree? As a Flow?)
+- **January**: 
+Finalizing results and writing report
+- ...
 
 
 
