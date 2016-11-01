@@ -9,7 +9,7 @@
 
 ## Abstract
 
-How do students learn in MOOCs? Are there efficient and inefficient learning patterns? This project will aim at giving answers to these questions by analysing the activities of hundreds of thousands of students on EPFL Scala MOOC on Coursera.
+How do students learn in MOOCs? Are there efficient and inefficient learning patterns? This project will aim at giving answers to these questions by analysing the activities of hundreds of thousands of students registered on EPFL Scala MOOC on Coursera. A simple and efficient visualization tool will be developped to provide usefull feedback to teachers in order to let them understand potential difficulties encountered by students during learning and (if necessary) adjusting the course accordingly. 
 
 ## Data description
 
@@ -37,15 +37,19 @@ For each session the available datasets are:
 ## Challenging aspects
 
 - **Visualizations**:
-The data we are working with would need to be visualized in a simple way, because the insights provided will benefit educators who would not be able to un.
+All the usefull informations extracted that may be of potential interest for educators would need to be visualized in a simple and efficient way. The goal will be to give to educators a feedback on their courses that they would not have been able to have without this work.
 
 - **Big data**:
-The dataset at hand is of approximately 9GB (raw `csv` files, it will be less after cleaning and extracting meaningful items). Even if it is not *HUGE*, it makes it quite slow to handle on a single laptop (in particular it is bigger than the RAM memory). That is why we plan to implement our analysis with Spark to be able to run it on a distributed cluster later on. At first, we will develop our algorithm by testing in locally on a subset of our data, then use the cluster to apply our analysis to the whole dataset.
+The size of the dataset is of approximately 9GB (raw `csv` files) for the moment (it will be less after cleaning and extracting meaningful items). Even if it is not *HUGE*, it makes it quite slow to handle on a single laptop (in particular it is bigger than the RAM of our personal computers). We therefore plan to implement our analysis with Spark to be able to run it on a distributed cluster later on. At first, we will develop our algorithm by testing it locally on a subset of our data, then use the cluster to apply our analysis to the whole dataset.
+
+- **choose the right machine learning technique**:
+The "most" appropriate machine learning technique that should be used for a particular problem always depends on lots of parameters namely the size, quality, nature of the data as well and desired output for example. That's why finding the appropriate technique to reach the objectives of this project will be a paramount point.
+
 
 ## Expected results
 
 - Simple and clear visualization of students learning pattern and their efficiency.
-- Extensive analysis of the learning patterns and measure of correlations between pattern used and grade improvement in assignments.
+- Extensive analysis of the learning patterns and measures of correlations between pattern used and grade improvement in assignments.
 
 ## Timeplan
 
