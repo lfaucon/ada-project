@@ -42,9 +42,12 @@ All the usefull informations extracted that may be of potential interest for edu
 - **Big data**:
 The size of the dataset is of approximately 9GB (raw `csv` files) for the moment (it will be less after cleaning and extracting meaningful items). Even if it is not *HUGE*, it makes it quite slow to handle on a single laptop (in particular it is bigger than the RAM of our personal computers). We therefore plan to implement our analysis with Spark to be able to run it on a distributed cluster later on. At first, we will develop our algorithm by testing it locally on a subset of our data, then use the cluster to apply our analysis to the whole dataset.
 
-- **choose the right machine learning technique**:
-The "most" appropriate machine learning technique that should be used for a particular problem always depends on lots of parameters namely the size, quality, nature of the data as well and desired output for example. That's why finding the appropriate technique to reach the objectives of this project will be a paramount point.
-
+- **Machine Learning**:
+We are willing to try out a variety of machine learning techniques for this project. We identify four use cases:
+    * **unsupervised clustering** with techniques such as the K-means algorithm to cluster the learning patterns in a few meaningful category giving us better insight than the list of patterns
+    * **collaborative filtering** to measure if some learning patterns would be efficient for a particular group of students but not other students and if we are able to build a pattern recommendation engine.
+    * **linear or logistic regressions** to predict students learning gain or students results from their behaviour and other features to be determined.
+    * **maximum likelihood estimation** to fit models of students knowledge and probabilities of learning for each possible activity, following the principles of Bayesian Knowledge Tracing.
 
 ## Expected results
 
