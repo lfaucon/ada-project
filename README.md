@@ -52,7 +52,7 @@ We are willing to try out a variety of machine learning techniques for this proj
 ## Expected results
 
 - Simple and clear visualization of students learning pattern and their efficiency.
-- Extensive analysis of the learning patterns and measures of correlations between pattern used and grade improvement in assignments.
+- Extensive analysis of the learning patterns, measures of correlations between pattern used and grade improvement and report of the results of our machine learning techniques.
 
 ## Timeplan
 
